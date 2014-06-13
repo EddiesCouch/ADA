@@ -1,0 +1,5 @@
+Tarot Reader Logic Puzzle
+=======
+1. The weights were 2,3,6. 
+2. Since we don't know the price of a tarot card reading, the only information that's useful to us is that there's three cats, when their weights are multiplied together it equals 36, and that there is a 'littlest' cat so the lowest number can't have duplicates. 3x6=18, 18x2=36.
+3. 1,2,18 would also work since the lowest value is unique and all of them are factors of 36.

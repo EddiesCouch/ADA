@@ -1,0 +1,11 @@
+Cave Gnome Logic Puzzle
+=======
+
+1. The key in this is that the gnomes are prohibited from speaking after they leave the cave but not before. If they agree before they leave the cave that when they leave they will form a line and if the line is solid they will place themselves on the end, and if the colors are mixed they will place themselves in the middle between the divide. After they're all out, they will form a complete line split down the middle by color. When they exit, it would go like so with B representing blue and R representing Red with the bolded letter the most recently inserted.
+    1. B
+    2. B**B**
+    3. BB**R**
+    4. BB**B**R
+    5. BBB**R**R
+2. It took me a very long time to figure this one out. Eventually I sat down with two toned paperclips to mimic the thought process of the gnomes leaving but it wasn't until I examined the wording carefully that I realized how they could get it done. After I determined that they could plan beforehand, my first thought was having them move to the left or right of the gnome next to them on the end based by color (i.e. left if they were blue, right if they were red) and while it would work, I felt it could be simplified. After doing a few tests with the paperclips, I saw that the method could be simplified to my final answer. 
+3. They could have touched the paint on their forehead while it was still wet and sorted themselves accordingly from what they saw on their fingers. 

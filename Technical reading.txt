@@ -1,0 +1,57 @@
+Technical Reading Assignment
+========
+
+1. This command creates a gem called "Foodie" and creates a scaffold directory while initializing a git repository in the directory. 
+2. In the spec folder. 
+3. spec.add_dependency "activesupport", "4.0.0"
+4.    Writing a Generator
+
+    1.   Define the generator class 
+
+        * desc "recipe", "Generates a recipe scaffold
+
+        * def recipe(group,name)
+
+        * Foodie::Generators::Recipe.start([group, name])
+
+        * end
+
+    2.   Require the file for the class by adding a line to the lib/foodie/cli.rb
+
+        * require 'foodie/generators/recipe'
+
+    3.   Require Thor::Group including Thor::Actions
+
+        *    Require 'thor/group'
+
+            *    module Foodie
+
+                *    module Generators
+
+                    *    class Recipe < Thor::Group
+
+                        *    include Thor::Actions
+
+                        * argument :group, :type => :string
+
+                        * argument :name, :type => :string
+
+                    * end
+
+                * end
+
+            * end
+    4.   Define methods in the class
+        *    def create_group
+            * empty directory(group)
+        * end
+    5. Use template method to copy file
+        *    def copy_recipe
+            *    template("recipe.txt", "#{group}/#{name}.txt")
+        * end
+    6. Test generator by running bundle exec bin/foodie recipe dinner steak
+    7. Define source_root as directed by 
+        *    def self.source_root
+            *    File.dirname(_FILE_) + "/recipe"
+        * end
+    8. Create text template .txt        
